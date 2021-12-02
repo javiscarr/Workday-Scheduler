@@ -13,9 +13,9 @@
 ## Screenshots
 
  
-![screenshot](./assets/images/scheduler.jpg)
+![screenshot](./assets/scheduler.jpg)
 
-![screenshot](./assets/images/scheduler2.jpg)
+![screenshot](./assets/scheduler2.jpg)
 
 
 
