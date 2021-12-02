@@ -24,27 +24,26 @@ $(".saveBtn").on("click", function() {
     $("#hour-16 .description").val(localStorage.getItem("hour-16"));
     $("#hour-17 .description").val(localStorage.getItem("hour-17"));
 
-    function hourTracker() {
+    function hourMonitor() {
         //retrieves the current number of hours using moment.js
         var currentHour = moment().hour(); 
 
         //loop over time blocks
         $(".time-block").each(function () {
-            var blockHour = parseInt($(this).attr("id").split("hour")[1]);
+            var blockHour = parseInt($(this).attr("id").split("-")[1]);
             console.log (blockHour, currentHour)
 
             //verifies if time has passed and goes to css/html given the current state
             if (blockHour < currentHour) {
                 $(this).addClass("past");
-                $(this).removeClass("future");
-                $(this).removeClass("present");
+                
 
             }
 
             else if (blockHour === currentHour) {
                 $(this).removeClass("past");
                 $(this).addClass("present");
-                $(this).removeClass("future");
+               
 
             }
 
@@ -53,9 +52,11 @@ $(".saveBtn").on("click", function() {
                 $(this).removeClass("past");
                 $(this).addClass("future");
             }
-        })
+        });
     }
    
-    hourTracker();
+    hourMonitor();
+
+    var interval = setInterval(hourMonitor, 15000);
 
 })
