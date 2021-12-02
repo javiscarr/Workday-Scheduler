@@ -1,7 +1,7 @@
 # Third-Party APIs Workday-Scheduler
 
 ## Description
-   -  This is a simple day planner application which loops through the business working hours of 9AM - 5PM. The application will display the current day and time when the application was opened. The data that is input by the user will be saved to the localStorage of the browser. Once the hour has passed the current time, past hours will be highlighted gray, the current hour red, and future hours green.
+   - This is a simple day planner application which loops through the business working hours of 9AM - 5PM. The application will display the current day and time when the application was opened. The data that is input by the user will be saved to the localStorage of the browser. Once the hour has passed the current time, past hours will be highlighted gray, the current hour red, and future hours green.
 
 
 ## User Story
@@ -9,6 +9,15 @@
 - AS AN employee with a busy schedule
 - I WANT to add important events to a daily planner
 - SO THAT I can manage my time effectively
+
+## Screenshots
+
+ ```md
+    ![alt text](assets/images/scheduler.jpg)
+    ```
+    ```md
+    ![alt text](assets/images/scheduler2.jpg)
+    ```
 
 
 ## Acceptance Criteria
