@@ -10,13 +10,6 @@
 - I WANT to add important events to a daily planner
 - SO THAT I can manage my time effectively
 
-## Screenshots
-
- 
-![screenshot](./assets/scheduler.jpg)
-
-![screenshot](./assets/scheduler2.jpg)
-
 
 
 ## Acceptance Criteria
