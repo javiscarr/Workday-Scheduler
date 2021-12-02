@@ -23,6 +23,39 @@ $(".saveBtn").on("click", function() {
     $("#hour-15 .description").val(localStorage.getItem("hour-15"));
     $("#hour-16 .description").val(localStorage.getItem("hour-16"));
     $("#hour-17 .description").val(localStorage.getItem("hour-17"));
+
+    function hourTracker() {
+        //retrieves the current number of hours using moment.js
+        var currentHour = moment().hour(); 
+
+        //loop over time blocks
+        $(".time-block").each(function (){
+            var blockHour = parseInt($this).attr("id").split("hour")[1];
+            console.log (blockHour, currentHour)
+
+            //verifies if time has passed and goes to css/html given the current state
+            if (blockHour < currentHour) {
+                $(this).addClass("past");
+                $(this).removeClass("future");
+                $(this).removeClass("present");
+
+            }
+
+            else if (blockHour === currentHour) {
+                $(this).addClass("present");
+                $(this).removeClass("past");
+                $(this).removeClass("future");
+
+            }
+
+            else {
+                $(this).removeClass("present");
+                $(this).removeClass("past");
+                $(this).addClass("future");
+            }
+        })
+    }
    
+    hourTracker();
 
 })
