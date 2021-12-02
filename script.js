@@ -29,8 +29,8 @@ $(".saveBtn").on("click", function() {
         var currentHour = moment().hour(); 
 
         //loop over time blocks
-        $(".time-block").each(function (){
-            var blockHour = parseInt($this).attr("id").split("hour")[1];
+        $(".time-block").each(function () {
+            var blockHour = parseInt($(this).attr("id").split("hour")[1]);
             console.log (blockHour, currentHour)
 
             //verifies if time has passed and goes to css/html given the current state
@@ -42,8 +42,8 @@ $(".saveBtn").on("click", function() {
             }
 
             else if (blockHour === currentHour) {
-                $(this).addClass("present");
                 $(this).removeClass("past");
+                $(this).addClass("present");
                 $(this).removeClass("future");
 
             }
