@@ -12,10 +12,10 @@
 
 ## Screenshots
 
- md
-    ![alt text](assets/images/scheduler.jpg)
+ 
+(assets/images/scheduler.jpg)
 
-![alt text](assets/images/scheduler2.jpg)
+(assets/images/scheduler2.jpg)
 
 
 
