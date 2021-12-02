@@ -12,12 +12,11 @@
 
 ## Screenshots
 
- ```md
+ md
     ![alt text](assets/images/scheduler.jpg)
-    ```
-    ```md
-    ![alt text](assets/images/scheduler2.jpg)
-    ```
+
+![alt text](assets/images/scheduler2.jpg)
+
 
 
 ## Acceptance Criteria
