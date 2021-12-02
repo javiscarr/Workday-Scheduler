@@ -1,18 +1,18 @@
 $(document).ready(function () {
-//jquery button click (function)
-
-//local storage for set item
-// create values to pass through 
-//value for time variable 
-//hour key value description
+//display current date and time using moment.js
+$("#currentDay").text(moment().format("dddd, MMMM Do YYYY, h:mm a")); 
 
 
-// new function to update hour
-//create var using moment js (to get current number of hours)
-//loop over timeblock .each is looping format
-//condition statements to get current time and timeblock are equal to define as past,present of future
-//set interval for 15000
-//load any saved data from local storage by calling out the key
-//display the current day on the page by using .text using moment js
-});
+//saveBtn listening for click from user input and time stamps it
+$(".saveBtn").on("click", function() {
 
+    console.log(this);
+    var text = $(this).siblings(".description").val(); //change is taken from sibling html? 
+    var time = $(this).parent().attr("id"); //this change is from html parent id
+
+    //items are set in local storage
+    localStorage.setItem(time, text);
+})
+
+
+})
